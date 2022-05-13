@@ -1,0 +1,132 @@
+.middle_content{
+display: flex;
+align-items: center;
+justify-content: center;
+// padding-left: 100px;
+height: 50%;
+color: white;
+}
+
+img{
+  width: 10rem;
+}
+
+li{
+  list-style-type: none;
+}
+
+.second-content{
+  position: absolute;
+  top: 28%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+}
+a{
+  position: relative;
+  text-decoration: none;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
+}
+.about{
+  position: absolute;
+  top: 43%;
+  left: 25%;
+  color: #fff;
+}
+.btnStart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+h1:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+}
+h1:before{
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate{
+  0%{
+    width: 0;
+    height: 0;
+    border-top-color: #fff;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50%{
+    width: 100%;
+    height: 0;
+    border-top-color: #fff;
+    border-right-color: #fff;;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+h1:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  animation: animate2 1s linear forwards;
+  animation-delay: 1s ;
+}
+// a:hover:after{
+//   animation: animate2 1s linear forwards;
+//   animation-delay: 1s ;
+// }
+
+@keyframes animate2{
+  0%{
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+  }
+  50%{
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: white;
+    border-left-color: white;
+  }
+}
+
+
