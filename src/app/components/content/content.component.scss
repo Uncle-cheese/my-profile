@@ -42,91 +42,91 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 1000;
 }
-h1:before{
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: 2px solid transparent;
-}
-h1:before{
-  animation: animate 1s linear forwards;
-}
+// h1:before{
+//   content: '';
+//   position: absolute;
+//   top: -2px;
+//   left: -2px;
+//   width: 0;
+//   height: 0;
+//   background: transparent;
+//   border: 2px solid transparent;
+// }
+// h1:before{
+//   animation: animate 1s linear forwards;
+// }
 
-@keyframes animate{
-  0%{
-    width: 0;
-    height: 0;
-    border-top-color: #fff;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  50%{
-    width: 100%;
-    height: 0;
-    border-top-color: #fff;
-    border-right-color: #fff;;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  100%{
-    width: 100%;
-    height: 100%;
-    border-top-color: #fff;
-    border-right-color: #fff;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-}
+// @keyframes animate{
+//   0%{
+//     width: 0;
+//     height: 0;
+//     border-top-color: #fff;
+//     border-right-color: transparent;
+//     border-bottom-color: transparent;
+//     border-left-color: transparent;
+//   }
+//   50%{
+//     width: 100%;
+//     height: 0;
+//     border-top-color: #fff;
+//     border-right-color: #fff;;
+//     border-bottom-color: transparent;
+//     border-left-color: transparent;
+//   }
+//   100%{
+//     width: 100%;
+//     height: 100%;
+//     border-top-color: #fff;
+//     border-right-color: #fff;
+//     border-bottom-color: transparent;
+//     border-left-color: transparent;
+//   }
+// }
 
-h1:after{
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: 2px solid transparent;
-  animation: animate2 1s linear forwards;
-  animation-delay: 1s ;
-}
-// a:hover:after{
+// h1:after{
+//   content: '';
+//   position: absolute;
+//   top: -2px;
+//   left: -2px;
+//   width: 0;
+//   height: 0;
+//   background: transparent;
+//   border: 2px solid transparent;
 //   animation: animate2 1s linear forwards;
 //   animation-delay: 1s ;
 // }
+// // a:hover:after{
+// //   animation: animate2 1s linear forwards;
+// //   animation-delay: 1s ;
+// // }
 
-@keyframes animate2{
-  0%{
-    width: 0;
-    height: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: #fff;
-  }
-  50%{
-    width: 0;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #fff;
-    border-left-color: #fff;
-  }
-  100%{
-    width: 100%;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: white;
-    border-left-color: white;
-  }
-}
+// @keyframes animate2{
+//   0%{
+//     width: 0;
+//     height: 0;
+//     border-top-color: transparent;
+//     border-right-color: transparent;
+//     border-bottom-color: transparent;
+//     border-left-color: #fff;
+//   }
+//   50%{
+//     width: 0;
+//     height: 100%;
+//     border-top-color: transparent;
+//     border-right-color: transparent;
+//     border-bottom-color: #fff;
+//     border-left-color: #fff;
+//   }
+//   100%{
+//     width: 100%;
+//     height: 100%;
+//     border-top-color: transparent;
+//     border-right-color: transparent;
+//     border-bottom-color: white;
+//     border-left-color: white;
+//   }
+// }
 
 
